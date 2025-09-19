@@ -36,9 +36,11 @@ namespace MohawkGame2D
             Draw.LineSize = 10.0f;
 
 
-            Vector2 rectanglePosition = new Vector2(300, 200);
+            //Vector2 rectanglePosition = new Vector2(300, 200);
             Vector2 rectangleSize = new Vector2(200, 100);
-            Draw.Rectangle(rectanglePosition, rectangleSize);
+            
+            
+            Draw.Rectangle(Input.GetMousePosition() - rectangleSize / 2, rectangleSize);
         }
     }
 
